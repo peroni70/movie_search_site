@@ -49,7 +49,6 @@ export default {
       var reqURL = "http://localhost:5000/search"
       var data = {
         "searchText": this.searchQuery,
-        "numToReturn": 100
       };
       this.$http.post(reqURL, data).then(function(response) {
         this.movieObj = response.data.movies;
